@@ -13,6 +13,7 @@
 		35C2CFA11EBBC475009FE032 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C2CF9F1EBBC475009FE032 /* Main.storyboard */; };
 		35C2CFA31EBBC475009FE032 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35C2CFA21EBBC475009FE032 /* Assets.xcassets */; };
 		35C2CFA61EBBC475009FE032 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35C2CFA41EBBC475009FE032 /* LaunchScreen.storyboard */; };
+		35C2CFAE1EBBCE17009FE032 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C2CFAD1EBBCE17009FE032 /* Foundation+Log.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		35C2CFA21EBBC475009FE032 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35C2CFA51EBBC475009FE032 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35C2CFA71EBBC475009FE032 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35C2CFAD1EBBCE17009FE032 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				35C2CF9A1EBBC475009FE032 /* AppDelegate.m */,
 				35C2CF9C1EBBC475009FE032 /* ViewController.h */,
 				35C2CF9D1EBBC475009FE032 /* ViewController.m */,
+				35C2CFAD1EBBCE17009FE032 /* Foundation+Log.m */,
 				35C2CF9F1EBBC475009FE032 /* Main.storyboard */,
 				35C2CFA21EBBC475009FE032 /* Assets.xcassets */,
 				35C2CFA41EBBC475009FE032 /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 				35C2CF9E1EBBC475009FE032 /* ViewController.m in Sources */,
 				35C2CF9B1EBBC475009FE032 /* AppDelegate.m in Sources */,
 				35C2CF981EBBC475009FE032 /* main.m in Sources */,
+				35C2CFAE1EBBCE17009FE032 /* Foundation+Log.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -35,18 +35,34 @@
     NSOperationQueue *demoQueue = [[NSOperationQueue alloc] init];
     [NSURLConnection sendAsynchronousRequest:demoRequest queue:demoQueue completionHandler:^(NSURLResponse * _Nullable response, NSData * _Nullable data, NSError * _Nullable connectionError) {
         
+        //4 如果不是200的话，返回其它的错误。
+        if (connectionError || data == nil) {
+            NSLog(@"%@--您的网路不给力，请稍后重试",connectionError);
+            return;
+        }
         
+        //5 如果200的话，返回服务端二进制数据。
+        NSLog(@"返回数据=%@",data);
+        //
+        NSLog(@"那个线程在执行 =%@",[NSThread currentThread]);
         
+        //6 更新ui在主线程
         dispatch_async(dispatch_get_main_queue(), ^{
+            //对网络请求完成调用这块代码，返回服务端二进制数据。
+//           NSString *retunString =  [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+//            
+//            NSLog(@"返回数据= %@",retunString);
             
-            NSData *receiveData = data;
+            
+            NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
+            NSLog(@"----返回数据dic=%@----",dic);
+            
             
         });
         
     } ];
     
     
-    //4 如果200的话，返回服务端二进制数据，其它的返回错误。
     
     
 
